@@ -1,0 +1,5 @@
+flask
+flask-sockets
+faster-whisper
+pyttsx3 
+websocket-client

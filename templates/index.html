@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text and Text-to-Speech</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Speech-to-Text and Text-to-Speech</h1>
+    <section>
+        <h2>Text-to-Speech</h2>
+        <textarea id="tts-text" placeholder="Type your text here..."></textarea>
+        <select id="tts-gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <input type="number" id="tts-speed" placeholder="Speed (1.0)" step="0.1" min="0.5" max="2.0">
+        <button onclick="generateTTS()">Generate Speech</button>
+        <audio id="tts-audio" controls></audio>
+    </section>
+    <section>
+        <h2>Speech-to-Text</h2>
+        <button onclick="startTranscription()">Start Transcription</button>
+        <div id="stt-output" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px; height: 100px; overflow-y: auto;">
+            <!-- Les transcriptions apparaîtront ici -->
+        </div>
+    </section>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
